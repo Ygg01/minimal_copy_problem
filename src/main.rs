@@ -45,7 +45,7 @@ fn test_file_to_folder() {
 fn test_file_to_folder_with_backslash() {
     let manifest = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
     let readme = manifest.join("README.md");
-    let mut dest = manifest.join("target").join("test2").to_str().unwrap().to_string();
+    let mut dest = manifest.join("target").join("test3").to_str().unwrap().to_string();
     dest.push(std::path::MAIN_SEPARATOR);
 
     println!("dest: {:?}",dest);
